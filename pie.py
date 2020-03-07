@@ -12,11 +12,11 @@ if __name__ == '__main__':
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.rcParams['axes.unicode_minus']=False
 
-    data = {\
-            "苹果"   : 10,\
-            "香蕉"   : 20,\
-            "火龙果" : 5 ,\
-            "菠萝"   : 10 \
+    data = {
+            "苹果"   : 10,
+            "香蕉"   : 20,
+            "火龙果" : 5 ,
+            "菠萝"   : 10
             }
 
     X = list(data.values())
