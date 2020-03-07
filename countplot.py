@@ -34,8 +34,9 @@ if __name__ == '__main__':
 
     newData.Counts = counts
 
-    plt.figure(figsize=(14,7))
+    plt.figure(figsize=(8,6))
     sns.stripplot(x='X',y='Y',data=newData,hue='label',size=counts*5)
+    plt.xticks([1,10,20,30])
     plt.savefig("Counts Plot")
     plt.show()
 
