@@ -25,9 +25,9 @@ if __name__ == '__main__':
     # 抖动图 : 对重合的点进行位置微调，让我们知道这里有多个点
     # jitter : 抖动幅度
     # size   : 点的大小
-    plt.figure()
+    plt.figure(figsize=(8,6))
     # 按照label进行颜色分类，并画出抖动图
-    sns.stripplot(x='X',y='Y',data=newdata,jitter=0.1,hue="label",size=10)
+    sns.stripplot(x='X',y='Y',data=newdata,jitter=0.2,hue="label",size=10)
     plt.xticks([1,10,20,30,40])
     plt.savefig("jittering with stripplot")
     plt.show()
